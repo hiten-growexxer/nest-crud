@@ -1,0 +1,23 @@
+{
+  "moduleFileExtensions": ["js", "json", "ts"],
+  "rootDir": "./",
+  "testEnvironment": "node",
+  "testMatch": ["<rootDir>/test/**/app.e2e-spec.{ts,js}"],
+  "transform": {
+    "^.+\\.(t|j)s$": "ts-jest"
+  },
+  "verbose": false,
+  "collectCoverage": true,
+  "collectCoverageFrom": [
+    "src/**/*.ts",
+    "!**/node_modules/**",
+    "!**/vendor/**",
+    "!src/db/**/*.ts",
+    "!src/main.ts"
+  ],
+  "coverageDirectory": "coverage",
+  "coverageReporters": [
+    "json",
+    "lcov"
+  ]
+}
